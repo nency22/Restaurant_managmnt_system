@@ -1,0 +1,70 @@
+:root {
+  color-scheme: light;
+  --paper: #faf7f2;
+  --paper-2: #f2ebd9;
+  --paper-3: #e6dcc8;
+  --ink: #2c2523;
+  --ink-soft: #5a483c;
+  --gold: #c5a059;
+  --gold-deep: #8c6d3b;
+  --brand: #491313;
+  --brand-2: #ab3434;
+  --sage: #6f8f68;
+  --ember: #c4622d;
+  --bg-color: var(--paper);
+  --text-color: var(--ink);
+  --surface-color: var(--paper-2);
+  --border-color: var(--brand);
+  --primary-color: var(--brand);
+  --secondary-color: var(--brand-2);
+  --black: #000000;
+  --white: #ffffff;
+}
+
+html.dark {
+  color-scheme: dark;
+  --paper: #14100e;
+  --paper-2: #1f1a16;
+  --paper-3: #2d261f;
+  --ink: #f3ece0;
+  --ink-soft: #cdbfae;
+  --gold: #c5a059;
+  --gold-deep: #d8b56e;
+  --brand: #e8b4a8;
+  --brand-2: #e5857f;
+  --sage: #9dbb95;
+  --ember: #e8894f;
+  --bg-color: var(--paper);
+  --text-color: var(--ink);
+  --surface-color: var(--paper-2);
+  --border-color: var(--gold);
+  --primary-color: var(--brand);
+  --secondary-color: var(--brand-2);
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-paper-2: var(--paper-2);
+  --color-paper-3: var(--paper-3);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-gold: var(--gold);
+  --color-gold-deep: var(--gold-deep);
+  --color-brand: var(--brand);
+  --color-brand-2: var(--brand-2);
+  --color-sage: var(--sage);
+  --color-ember: var(--ember);
+}
+
+.moving-text {
+  animation: move 20s linear infinite;
+}
+
+@keyframes move {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
