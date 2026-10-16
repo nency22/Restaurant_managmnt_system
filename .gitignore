@@ -1,0 +1,21 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Secrets
+.env
+.env.*
+
+# React
+node_modules/
+dist/
+build/
+
+# Django generated files
+staticfiles/
+
+# IDE
+.vscode/
+.idea/
