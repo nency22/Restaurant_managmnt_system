@@ -61,7 +61,7 @@ export const getMenuItems = (options) =>
     MENU_KEY,
     MENU_TTL,
     async () => {
-      const { data } = await apiClient.get("/api/menu/");
+      const { data } = await apiClient.get("http://127.0.0.1:8000/api/menu/");
       return data;
     },
     options
@@ -76,7 +76,7 @@ export const getMenuItemCustomizations = (menuItemId, options) =>
     `customizations:${menuItemId}`,
     CUSTOMIZATION_TTL,
     async () => {
-      const { data } = await apiClient.get(`/api/menu/${menuItemId}/customizations/`);
+      const { data } = await apiClient.get(`http://127.0.0.1:8000/api/menu/${menuItemId}/customizations/`);
       return data;
     },
     options

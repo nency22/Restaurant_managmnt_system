@@ -10,16 +10,16 @@ export const createOrder = async (cartItems) => {
       ? item.customizations.map((c) => (typeof c === "object" ? c.id : c))
       : [],
   }));
-  const { data } = await apiClient.post("/api/create-order/", { items });
+  const { data } = await apiClient.post("http://127.0.0.1:8000/api/create-order/", { items });
   return data;
 };
 
 export const getMyOrders = async () => {
-  const { data } = await apiClient.get("/api/my-orders/");
+  const { data } = await apiClient.get("http://127.0.0.1:8000/api/my-orders/");
   return toList(data);
 };
 
 export const cancelOrder = async (orderId) => {
-  const { data } = await apiClient.post(`/api/${orderId}/cancel/`);
+  const { data } = await apiClient.post(`http://127.0.0.1:8000/api/${orderId}/cancel/`);
   return data;
 };

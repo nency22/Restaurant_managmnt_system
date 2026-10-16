@@ -19,7 +19,7 @@ export const createReservation = async (reservation) => {
   };
 
   try {
-    const { data } = await apiClient.post("/api/reservations/", payload);
+    const { data } = await apiClient.post("http://127.0.0.1:8000/api/reservations/", payload);
     return data;
   } catch (error) {
     if (looksLikeNoTable(error)) {
@@ -32,21 +32,21 @@ export const createReservation = async (reservation) => {
 };
 
 export const getMyReservations = async () => {
-  const { data } = await apiClient.get("/api/reservations/my/");
+  const { data } = await apiClient.get("http://127.0.0.1:8000/api/reservations/my/");
   return toList(data);
 };
 
 export const cancelReservation = async (id) => {
-  const { data } = await apiClient.patch(`/api/reservations/${id}/cancel/`);
+  const { data } = await apiClient.patch(`http://127.0.0.1:8000/api/reservations/${id}/cancel/`);
   return data;
 };
 
 export const getAdminReservations = async () => {
-  const { data } = await apiClient.get("/api/admin/reservations/");
+  const { data } = await apiClient.get("http://127.0.0.1:8000/api/admin/reservations/");
   return toList(data);
 };
 
 export const updateReservationStatus = async (id, status) => {
-  const { data } = await apiClient.patch(`/api/admin/reservations/${id}/status/`, { status });
+  const { data } = await apiClient.patch(`http://127.0.0.1:8000/api/admin/reservations/${id}/status/`, { status });
   return data;
 };
