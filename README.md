@@ -191,7 +191,7 @@ restaurant-management-system/
 <img width="1366" height="610" alt="Screenshot (118)" src="https://github.com/user-attachments/assets/2dd27bd9-a47d-49f9-ba0f-4e4e9b2ed727" />
 <img width="1271" height="715" alt="Screenshot (117)" src="https://github.com/user-attachments/assets/afbbf89d-c7c3-4b1a-87ad-e6421add2519" />
 <img width="1226" height="690" alt="Screenshot (116)" src="https://github.com/user-attachments/assets/7b203bab-a13e-4c39-b67a-e4c0b57848b2" />
-![Uploading image.png…]()
+
 
 
 ## Contributing
