@@ -30,9 +30,8 @@ export const useMenu = ({ onError } = {}) => {
   );
 
   useEffect(() => {
-    if (cached?.isFresh) return undefined;
     let active = true;
-    getMenuItems()
+    getMenuItems({ force: Boolean(cached) })
       .then((data) => {
         if (!active) return;
         const list = normalize(data);

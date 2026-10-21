@@ -1,7 +1,7 @@
 import axios from "axios";
 import { jwtDecode } from "jwt-decode";
 
-const RAW_BASE_URL = import.meta.env.VITE_API_BASE_URL || "VITE_API_BASE_URL=http://127.0.0.1:8000";
+const RAW_BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://127.0.0.1:8000";
 const BASE_URL = RAW_BASE_URL.replace(/\/$/, "");
 
 const ACCESS_TOKEN_KEY = "authToken";
@@ -86,7 +86,7 @@ let refreshPromise = null;
 const performRefresh = () => {
   if (!refreshPromise) {
     refreshPromise = axios
-      .post(`${BASE_URL}http://127.0.0.1:8000/api/account/token/refresh/`, {
+      .post(`${BASE_URL}/api/account/token/refresh/`, {
         refresh: tokenStorage.getRefresh(),
       })
       .then(({ data }) => {
