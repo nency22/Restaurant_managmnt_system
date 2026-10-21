@@ -1,3 +1,4 @@
+<img width="1366" height="768" alt="Screenshot (116)" src="https://github.com/user-attachments/assets/2862ebdc-8aed-43e8-a115-2b5db18ef61a" />
 # Restaurant Management System
 
 A full-stack Restaurant Management System built with **Django REST Framework**, **PostgreSQL**, and **React**. 
