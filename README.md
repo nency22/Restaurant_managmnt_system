@@ -99,6 +99,16 @@ node -v
 npm -v
 Download Node.js from https://nodejs.org if you don't have it.
 
+
+
+Scripts
+Command	What it does
+npm run dev	Starts the dev server on port 5173
+npm run build	Creates a production build in dist/
+npm run preview	Serves the production build locally
+npm run lint	Runs ESLint
+
+
 Open a new terminal:
 
 ```bash
