@@ -205,5 +205,5 @@ This project is licensed under the MIT License.
 ## Author
 
 **Your Name**
-- GitHub: [@your-username](https://github.com/nency22)
+- GitHub:https://github.com/nency22
 - Email: nensipan123@gmail.com
