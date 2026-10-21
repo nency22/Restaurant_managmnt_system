@@ -93,6 +93,12 @@ The API runs at `http://127.0.0.1:8000/`
 
 ### 4. Frontend setup (React)
 
+Check your versions:
+
+node -v
+npm -v
+Download Node.js from https://nodejs.org if you don't have it.
+
 Open a new terminal:
 
 ```bash
