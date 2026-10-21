@@ -1,4 +1,4 @@
-<img width="1366" height="768" alt="Screenshot (116)" src="https://github.com/user-attachments/assets/2862ebdc-8aed-43e8-a115-2b5db18ef61a" />
+
 # Restaurant Management System
 
 A full-stack Restaurant Management System built with **Django REST Framework**, **PostgreSQL**, and **React**. 
@@ -187,6 +187,13 @@ restaurant-management-system/
 - Email / SMS notifications for reservations
 - Sales reports and analytics dashboard
 
+#screen shot
+<img width="1366" height="610" alt="Screenshot (118)" src="https://github.com/user-attachments/assets/2dd27bd9-a47d-49f9-ba0f-4e4e9b2ed727" />
+<img width="1271" height="715" alt="Screenshot (117)" src="https://github.com/user-attachments/assets/afbbf89d-c7c3-4b1a-87ad-e6421add2519" />
+<img width="1226" height="690" alt="Screenshot (116)" src="https://github.com/user-attachments/assets/7b203bab-a13e-4c39-b67a-e4c0b57848b2" />
+![Uploading image.png…]()
+
+
 ## Contributing
 
 Contributions are welcome. Fork the repository, create a new branch, commit your changes, and open a pull request.
@@ -198,5 +205,5 @@ This project is licensed under the MIT License.
 ## Author
 
 **Your Name**
-- GitHub: [@your-username](https://github.com/your-username)
+- GitHub: [@your-username](https://github.com/nency22)
 - Email: nensipan123@gmail.com
